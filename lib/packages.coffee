@@ -9,15 +9,15 @@ requirements = [
 ]
 
 module.exports =
-  setup: ->
+  setup: (cb) ->
     atom.packages.activatePackage('settings-view').then (p) =>
       return @settingsError() unless p?
       PackageManager = require path.join p.path, 'lib', 'package-manager'
       @packageManager = new PackageManager
 
-      return if @allInstalled requirements
+      return cb() if @allInstalled requirements
       @setupInfo()
-      @installAll requirements.slice()
+      @installAll requirements.slice(), cb
 
   allInstalled: (pkgs) ->
     for pkg in pkgs
@@ -36,13 +36,14 @@ module.exports =
               cb?()
         .catch (err) => @retreiveError name, err
 
-  installAll: (pkgs) ->
+  installAll: (pkgs, cb) ->
     if (pkg = pkgs.shift())?
       @install pkg, =>
         @installAll pkgs
     else
       atom.notifications.addSuccess "Juno: Success!",
         detail: "We've set up the Atom packages for you."
+      cb?()
 
   setupInfo: ->
     atom.notifications.addInfo "Juno: Installing Atom packages",
