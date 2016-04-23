@@ -17,7 +17,7 @@ Then:
 
 #### On Linux
 
-1. Unzip the downloaded folder into your home directory and place it in your home directory.
+1. Unzip the downloaded folder and place it in your home directory.
 
 ## Getting Atom
 
