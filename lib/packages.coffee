@@ -39,7 +39,7 @@ module.exports =
   installAll: (pkgs, cb) ->
     if (pkg = pkgs.shift())?
       @install pkg, =>
-        @installAll pkgs
+        @installAll pkgs, cb
     else
       @setupnote.dismiss()
       atom.notifications.addSuccess "Juno: Success!",
