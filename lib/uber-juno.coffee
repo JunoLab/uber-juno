@@ -26,7 +26,8 @@ module.exports =
     @setupPath()
 
   setupPath: ->
-    return if atom.config.get('julia-client.juliaPath') isnt 'julia'
+    current = atom.config.get 'julia-client.juliaPath'
+    return if current? and current isnt 'julia'
     pathfinder.juliaShell().then (valid) ->
       if not valid
         pathfinder.getpath().then (p) ->
