@@ -33,4 +33,4 @@ Atom will then set up Juno for you, installing the required Atom and Julia packa
 
 If you have any issues with this setup, please do report it here or at [Juno Discuss](http://discuss.junolab.org). We'll do our best to help you get going.
 
-If you want more control, you can also follow the [manual install instructions](https://github.com/JunoLab/atom-julia-client/manual).
+If you want more control, you can also follow the [manual install instructions](https://github.com/JunoLab/atom-julia-client/tree/master/manual).
