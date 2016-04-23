@@ -1,5 +1,5 @@
-# uber-juno package
+# uber-juno
 
-A short description of your package.
+This is an Atom package which sets up the Juno IDE. It will install the various Julia-related packages, set some custom config for a great Julia environment, and if possible hook up to any currently-installed Julia binaries for evaluation etc.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+See setup.md for instructions.
