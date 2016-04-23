@@ -25,16 +25,17 @@ module.exports =
     return true
 
   install: (name, cb) ->
-    if not @packageManager.isPackageInstalled name
-      @packageManager.getPackage(name)
-        .then (pkg) =>
-          @packageManager.install pkg, (err) =>
-            if err?
-              @installError name, err
-            else
-              atom.notifications.addSuccess "Juno: Installed package #{name}"
-              cb?()
-        .catch (err) => @retreiveError name, err
+    return cb?() if @packageManager.isPackageInstalled name
+    atom.notifications.addInfo "Installing #{name}"
+    @packageManager.getPackage(name)
+      .then (pkg) =>
+        @packageManager.install pkg, (err) =>
+          if err?
+            @installError name, err
+          else
+            atom.notifications.addSuccess "Juno: Installed package #{name}"
+            cb?()
+      .catch (err) => @retreiveError name, err
 
   installAll: (pkgs, cb) ->
     if (pkg = pkgs.shift())?
