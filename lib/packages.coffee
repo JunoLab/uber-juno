@@ -32,7 +32,7 @@ module.exports =
             if err?
               @installError name, err
             else
-              atom.notifications.addSuccess "Juno: Installed Package #{name}"
+              atom.notifications.addSuccess "Juno: Installed package #{name}"
               cb?()
         .catch (err) => @retreiveError name, err
 
