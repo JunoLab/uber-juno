@@ -23,7 +23,7 @@ Then:
 
 Download, install and open [Atom](https://atom.io).
 
-In Atom, go to Settings (<kbd>Ctrl-,</kbd>, or <kbd>Cmd-,</kbd> on OS X) and go to the "Install" panel.
+In Atom, go to Settings (<kbd>Ctrl ,</kbd>, or <kbd>Cmd ,</kbd> on OS X) and go to the "Install" panel.
 
 Type `uber-juno` into the search box and hit enter. Click the install button on the package of the same name.
 
