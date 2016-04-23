@@ -1,5 +1,7 @@
 # Getting Juno
 
+Getting Juno takes a couple of simple teps and just a few minutes. Follow this and you'll be running Julia code in no time!
+
 ## Getting Julia
 
 First, download Julia (command line version) for your platform from the [downloads page](http://julialang.org/downloads/).
