@@ -41,38 +41,43 @@ module.exports =
       @install pkg, =>
         @installAll pkgs
     else
+      @setupnote.dismiss()
       atom.notifications.addSuccess "Juno: Success!",
         detail: "We've set up the Atom packages for you."
       cb?()
 
   setupInfo: ->
-    atom.notifications.addInfo "Juno: Installing Atom packages",
+    @setupnote = atom.notifications.addInfo "Juno: Installing Atom packages",
       detail: """
         This will take a moment – hang tight!
+        We'll let you know once it's done.
         """
+      dismissable: true
 
   settingsError: ->
     atom.notifications.addError "Juno: Couldn't find settings-view package.",
       dismissable: true
 
   retreiveError: (name, err) ->
+    @setupnote.dismiss()
     atom.notifications.addError "Juno: Error downloading package info for #{name}",
     detail: """
       Please check your internet connection, or report this to
           http://discuss.junolab.org
       and we'll try to help.
-          ---
+          –––
       #{err}
       """
     dismissable: true
 
   installError: (name, err) ->
+    @setupnote.dismiss()
     atom.notifications.addError "Juno: Error installing package #{name}",
     detail: """
       Please check your internet connection, or report this to
           http://discuss.junolab.org
       and we'll try to help.
-          ---
+          –––
       #{err}
       """
     dismissable: true
