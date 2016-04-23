@@ -2,7 +2,7 @@ packages = require './packages'
 
 module.exports =
   config:
-    disabled:
+    disable:
       type: 'boolean'
       default: false
       description: "Don't run when Atom boots"
