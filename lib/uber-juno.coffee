@@ -1,4 +1,5 @@
 packages = require './packages'
+pathfinder = require './path'
 
 module.exports =
   config:
@@ -22,3 +23,18 @@ module.exports =
   configSetup: ->
     for k, v of @defaultConfig
       atom.config.set k, v
+    @setupPath()
+
+  setupPath: ->
+    return if atom.config.get('julia-client.juliaPath') isnt 'julia'
+    pathfinder.juliaShell().then (valid) ->
+      if not valid
+        pathfinder.getpath().then (p) ->
+          if p?
+            atom.config.set 'julia-client.juliaPath', p
+            atom.notifications.addInfo "We found Julia on your system",
+              detail: """
+                Juno is configured to boot Julia from:
+                  #{p}
+                This path can be changed from Julia → Settings.
+                """
