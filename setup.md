@@ -4,7 +4,7 @@ Getting Juno takes a couple of simple teps and just a few minutes. Follow this a
 
 ## Getting Julia
 
-First, download Julia (command line version) for your platform from the [downloads page](http://julialang.org/downloads/).
+First, download Julia v0.4 (command line version) for your platform from the [downloads page](http://julialang.org/downloads/).
 
 Then:
 
