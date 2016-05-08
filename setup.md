@@ -4,7 +4,7 @@ Getting Juno takes a couple of simple teps and just a few minutes. Follow this a
 
 ## Getting Julia
 
-First, download Julia v0.4 (command line version) for your platform from the [downloads page](http://julialang.org/downloads/).
+First, download Julia (command line version) for your platform from the [downloads page](http://julialang.org/downloads/).
 
 Then:
 
@@ -36,3 +36,7 @@ Atom will then set up Juno for you, installing the required Atom and Julia packa
 If you have any issues with this setup, please do report it here or at [Juno Discuss](http://discuss.junolab.org). We'll do our best to help you get going.
 
 If you want more control, you can also follow the [manual install instructions](https://github.com/JunoLab/atom-julia-client/tree/master/manual).
+
+The development version of Julia (v0.5) isn't officially supported via these instructions. If you know what you're doing you can get it working by checkout out the `julia-0.5` branches of Atom.jl and CodeTools.jl, after installing the Atom.jl package.
+
+[Let us know](http://discuss.junolab.org) if you have any other issues or questions.
