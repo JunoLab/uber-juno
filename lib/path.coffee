@@ -60,3 +60,5 @@ module.exports =
       proc = child_process.spawn which, ['julia']
       proc.on 'exit', (status) ->
         resolve status is 0
+      proc.on 'error', (err) ->
+        resolve false
