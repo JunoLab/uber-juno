@@ -19,6 +19,7 @@ module.exports =
     'julia-client.enableMenu': true
     'julia-client.enableToolBar': true
     'julia-client.launchOnStartup': true
+    'editor.scrollPastEnd': true
 
   configSetup: ->
     for k, v of @defaultConfig
