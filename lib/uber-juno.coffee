@@ -20,6 +20,7 @@ module.exports =
     'julia-client.enableToolBar': true
     'julia-client.launchOnStartup': true
     'editor.scrollPastEnd': true
+    'autocomplete-plus.confirmCompletion': "tab"
 
   configSetup: ->
     for k, v of @defaultConfig
