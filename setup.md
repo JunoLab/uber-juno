@@ -37,6 +37,6 @@ If you have any issues with this setup, please do report it here or at [Juno Dis
 
 If you want more control, you can also follow the [manual install instructions](https://github.com/JunoLab/atom-julia-client/tree/master/manual).
 
-The development version of Julia (v0.5) isn't officially supported via these instructions. If you know what you're doing you can get it working by checkout out the `julia-0.5` branches of Atom.jl and CodeTools.jl, after installing the Atom.jl package.
+The development version of Julia (v0.5) isn't officially supported via these instructions. If you know what you're doing you can get it working by following [these instructions](https://github.com/JunoLab/atom-julia-client/tree/master/docs).
 
 [Let us know](http://discuss.junolab.org) if you have any other issues or questions.
