@@ -31,6 +31,8 @@ Type `uber-juno` into the search box and hit enter. Click the install button on 
 
 Atom will then set up Juno for you, installing the required Atom and Julia packages. Once the setup is done you're good to go!
 
+---
+
 ## Notes & Troubleshooting
 
 This setup works by installing the collection of modules and plugins that together make up Juno. For more information see [here](https://github.com/JunoLab/atom-julia-client/issues/186#issuecomment-225140959).
