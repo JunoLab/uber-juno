@@ -20,6 +20,7 @@ Then:
 #### On Linux
 
 1. Unzip the downloaded folder and place it in your home directory.
+2. Make sure to have dependencies curl and cmake installed.
 
 ## Getting Atom & Juno
 
