@@ -2,7 +2,7 @@
   "name": "uber-juno",
   "main": "./lib/uber-juno",
   "version": "0.1.1",
-  "description": "Install the Juno IDE in Atom",
+  "description": "Install the Juno IDE for Julia, in Atom",
   "keywords": [],
   "repository": "https://github.com/JunoLab/uber-juno",
   "license": "MIT",
