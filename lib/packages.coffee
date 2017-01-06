@@ -2,6 +2,7 @@ path = require 'path'
 
 requirements = [
   'tool-bar'
+  'highlight-selected'
   'latex-completions'
   'language-julia'
   'ink'
