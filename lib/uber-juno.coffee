@@ -6,7 +6,7 @@ module.exports =
     disable:
       type: 'boolean'
       default: false
-      description: "Don't run when Atom boots"
+      description: "Don't run installation when Atom boots. (This option is set automatically once the installation is complete.)"
 
   activate: ->
     return if atom.config.get 'uber-juno.disable'
