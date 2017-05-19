@@ -3,6 +3,7 @@ path = require 'path'
 requirements = [
   'tool-bar'
   'highlight-selected'
+  'indent-detective'
   'latex-completions'
   'language-julia'
   'ink'
