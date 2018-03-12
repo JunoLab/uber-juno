@@ -16,8 +16,8 @@ module.exports =
 
   defaultConfig:
     'tool-bar.position': 'Left'
-    'julia-client.enableMenu': true
-    'julia-client.enableToolBar': true
+    'julia-client.uiOptions.enableMenu': true
+    'julia-client.uiOptions.enableToolBar': true
     'editor.scrollPastEnd': true
     'autocomplete-plus.confirmCompletion': "tab always, enter when suggestion explicitly selected"
 
