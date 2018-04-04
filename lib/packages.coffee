@@ -5,7 +5,6 @@ requirements = [
   'indent-detective'
   'latex-completions'
   'language-julia'
-  'language-markdown'
   'ink'
   'julia-client'
 ]
