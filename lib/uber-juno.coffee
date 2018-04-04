@@ -1,5 +1,6 @@
 packages = require './packages'
 pathfinder = require './path'
+compat = require './incompatible-packages'
 
 module.exports =
   config:
@@ -9,6 +10,7 @@ module.exports =
       description: "Don't run installation when Atom boots. (This option is set automatically once the installation is complete.)"
 
   activate: ->
+    compat.checkIncompatible()
     return if atom.config.get 'uber-juno.disable'
     @configSetup()
     packages.setup ->
