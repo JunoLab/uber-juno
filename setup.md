@@ -24,7 +24,7 @@ Then:
 
 ## Getting Atom & Juno
 
-Download, install and open [Atom](https://atom.io). If you have it already, make sure it's up to date (version 1.7+).
+Download, install and open [Atom](https://atom.io). If you have it already, make sure it's up to date (version 1.23+).
 
 In Atom, go to Settings (<kbd>Ctrl ,</kbd>, or <kbd>Cmd ,</kbd> on OS X) and go to the "Install" panel.
 
