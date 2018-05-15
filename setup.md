@@ -24,7 +24,7 @@ Then:
 
 ## Getting Atom & Juno
 
-Download, install and open [Atom](https://atom.io). If you have it already, make sure it's up to date (version 1.7+).
+Download, install and open [Atom](https://atom.io). If you have it already, make sure it's up to date (version 1.23+).
 
 In Atom, go to Settings (<kbd>Ctrl ,</kbd>, or <kbd>Cmd ,</kbd> on OS X) and go to the "Install" panel.
 
@@ -38,6 +38,6 @@ Atom will then set up Juno for you, installing the required Atom and Julia packa
 
 This setup works by installing the collection of modules and plugins that together make up Juno. For more information see [here](https://github.com/JunoLab/atom-julia-client/issues/186#issuecomment-224560622).
 
-If you have any issues with this setup, please do report it here or at [Juno Discuss](http://discuss.junolab.org). We'll do our best to help you get going.
+If you have any issues with this setup, please do report it here or at [Juno Discourse](https://discourse.julialang.org/c/tools/juno). We'll do our best to help you get going.
 
-[Let us know](http://discuss.junolab.org) if you have any other issues or questions.
+[Let us know](https://discourse.julialang.org/c/tools/juno) if you have any other issues or questions.
