@@ -65,7 +65,7 @@ module.exports =
     atom.notifications.addError "Juno: Error downloading package info for #{name}",
     detail: """
       Please check your internet connection, or report this to
-          http://discuss.junolab.org
+          https://discourse.julialang.org
       and we'll try to help.
           –––
       #{err}
@@ -77,7 +77,7 @@ module.exports =
     atom.notifications.addError "Juno: Error installing package #{name}",
     detail: """
       Please check your internet connection, or report this to
-          http://discuss.junolab.org
+          https://discourse.julialang.org
       and we'll try to help.
           –––
       #{err}
