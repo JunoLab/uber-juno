@@ -27,14 +27,14 @@ module.exports =
 
   install: (name, cb) ->
     return cb?() if @packageManager.isPackageInstalled name
-    atom.notifications.addInfo "Installing #{name}"
+    atom.notifications.addInfo "Installing `#{name}`"
     @packageManager.getPackage(name)
       .then (pkg) =>
         @packageManager.install pkg, (err) =>
           if err?
             @installError name, err
           else
-            atom.notifications.addSuccess "Juno: Installed package #{name}"
+            atom.notifications.addSuccess "Juno: Installed package `#{name}`"
             cb?()
       .catch (err) => @retreiveError name, err
 
@@ -45,41 +45,40 @@ module.exports =
     else
       @setupnote.dismiss()
       atom.notifications.addSuccess "Juno: Success!",
-        detail: "We've set up the Atom packages for you."
+        description: "We've set up the Atom packages for you."
       cb?()
 
   setupInfo: ->
     @setupnote = atom.notifications.addInfo "Juno: Installing Atom packages",
-      detail: """
-        This will take a moment – hang tight!
-        We'll let you know once it's done.
-        """
+      description: "This will take a moment -- hang tight ! We'll let you know once it's done."
       dismissable: true
 
   settingsError: ->
-    atom.notifications.addError "Juno: Couldn't find settings-view package.",
+    atom.notifications.addError "Juno: Couldn't find `settings-view` package.",
       dismissable: true
 
   retreiveError: (name, err) ->
     @setupnote.dismiss()
-    atom.notifications.addError "Juno: Error downloading package info for #{name}",
-    detail: """
+    atom.notifications.addError "Juno: Error downloading package info for `#{name}`",
+    description:
+      """
       Please check your internet connection, or report this to
-          https://discourse.julialang.org
+      https://github.com/JunoLab/Juno.jl/issues or https://discourse.julialang.org
       and we'll try to help.
-          –––
-      #{err}
+
+          #{err}
       """
     dismissable: true
 
   installError: (name, err) ->
     @setupnote.dismiss()
-    atom.notifications.addError "Juno: Error installing package #{name}",
-    detail: """
+    atom.notifications.addError "Juno: Error installing package `#{name}`",
+    description:
+      """
       Please check your internet connection, or report this to
-          https://discourse.julialang.org
+      https://github.com/JunoLab/Juno.jl/issues or https://discourse.julialang.org
       and we'll try to help.
-          –––
-      #{err}
+
+          #{err}
       """
     dismissable: true
