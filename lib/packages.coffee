@@ -4,6 +4,7 @@ requirements = [
   'tool-bar'
   'indent-detective'
   'latex-completions'
+  'hyperclick'
   'language-julia'
   'ink'
   'julia-client'
