@@ -1,7 +1,7 @@
 {
   "name": "uber-juno",
   "main": "./lib/uber-juno",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "The official installer of Juno, the Julia IDE",
   "keywords": [
     "julia",
