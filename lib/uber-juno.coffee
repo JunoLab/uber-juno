@@ -7,7 +7,7 @@ module.exports =
     disable:
       type: 'boolean'
       default: false
-      description: "Don't run installation when Atom boots. (This option is set automatically once the installation is complete.)"
+      description: "Don't run installation on Atom startup. (This option is set automatically once the installation is complete.)"
 
   activate: ->
     compat.checkIncompatible()
@@ -37,8 +37,8 @@ module.exports =
           if p?
             atom.config.set 'julia-client.juliaPath', p
             atom.notifications.addInfo "We found Julia on your system",
-              detail: """
-                Juno is configured to boot Julia from:
-                  #{p}
-                This path can be changed from Julia → Settings.
+              description:
+                """
+                Juno is configured to boot Julia from: `#{p}`
+                This path can be changed from `Juno → Settings…`.
                 """
