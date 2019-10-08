@@ -2,8 +2,19 @@
   "name": "uber-juno",
   "main": "./lib/uber-juno",
   "version": "0.2.0",
-  "description": "Install the Juno IDE for Julia, in Atom",
-  "keywords": [],
+  "description": "The official installer of Juno, the Julia IDE",
+  "keywords": [
+    "julia",
+    "Juno",
+    "IDE",
+    "language-julia",
+    "julia-client",
+    "ink",
+    "tool-bar",
+    "indent-detective",
+    "latex-completions",
+    "hyperclick"
+  ],
   "repository": "https://github.com/JunoLab/uber-juno",
   "license": "MIT",
   "engines": {
