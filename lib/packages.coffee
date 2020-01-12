@@ -7,7 +7,7 @@ requirements = [
   'language-julia'
   'ink'
   'julia-client'
-  'juno-toolbar-plus'
+  'juno-plus'
 ]
 
 module.exports =
