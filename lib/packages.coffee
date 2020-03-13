@@ -8,6 +8,7 @@ requirements = [
   'language-julia'
   'ink'
   'julia-client'
+  'linter-julia'
 ]
 
 module.exports =
