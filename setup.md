@@ -28,7 +28,7 @@ Download, install and open [Atom](https://atom.io). If you have it already, make
 
 In Atom, go to Settings (<kbd>Ctrl ,</kbd>, or <kbd>Cmd ,</kbd> on OS X) and go to the "Install" panel.
 
-Type `uber-juno` into the search box and hit enter. Click the install button on the package of the same name.
+Type `uber-juno` into the search box and hit enter. Click the install button on the package of the same name. Click the settings button on the package you have just installed. Unmark the checkbox named Disable on the settings of uber-juno. Restart Atom.
 
 Atom will then set up Juno for you, installing the required Atom and Julia packages. Once the setup is done you're good to go!
 
